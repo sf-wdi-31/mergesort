@@ -1,4 +1,4 @@
-# Day 3: Merge Sort
+# Merge Sort
 
 Merge sort is the first powerful sorting algorithm that you will encounter in the wilds of the real world (baked into Safari and Firefox.)  It uses an extremely efficient application of the 'Divide and Conquer' concept to sort lists of elements.  Let's give merge sort a shot!
 
