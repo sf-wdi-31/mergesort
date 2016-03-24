@@ -24,22 +24,24 @@ Here's the basic idea of the Bubble Sort algorithm:
 
 ## Example: Sort this list using Bubble Sort: `[5, 4, 2, 3, 1, 6]`
 
+Let's go through each iteration over the array and apply a bubble-sort.
+
 #### Iteration 1
 Look at the first two elements in the list.
 
-0: [**5, 4**, 2, 3, 1, 6]  
+0: [**5, 4**, 2, 3, 1, 6] <sub>SWAP!</sub>
 
 Is `5 > 4` ? Yes! Swap!
 
 If an element on the left (5) is greater than the element on the right (4), the two elements 'swap' locations.
 
-1: [4, **5, 2**, 3, 1, 6]
+1: [4, **5, 2**, 3, 1, 6] ⇨ [4, **2, 5**, 3, 1, 6] <sub>SWAP!</sub>
 
-2: [4, 2, **5, 3**, 1, 6]
+2: [4, 2, **5, 3**, 1, 6] ⇨ [4, 2, **3, 5**, 1, 6] <sub>SWAP!</sub>
 
-3: [4, 2, 3, **5, 1**, 6]
+3: [4, 2, 3, **5, 1**, 6] ⇨ [4, 2, 3, **1, 5**, 6] <sub>SWAP!</sub>
 
-4: [4, 2, 3, 1, **5, 6**]
+4: [4, 2, 3, 1, **5, 6**] ⇨ [4, 2, 3, 1, **5, 6**] <sub>same</sub>
 
 
 **Important:** We now know that the last element in the list is the largest element in the list. There's no need to do a comparison with that number ever again.
@@ -47,13 +49,13 @@ If an element on the left (5) is greater than the element on the right (4), the 
 
 #### Iteration 2
 
-0: [**4, 2**, 3, 1, 5, ~~6~~]
+0: [**4, 2**, 3, 1, 5, ~~6~~] ⇨ [**2, 4**, 3, 1, 5, ~~6~~]  <sub>SWAP!</sub>
 
-1: [2, **4, 3**, 1, 5, ~~6~~]
+1: [2, **4, 3**, 1, 5, ~~6~~] ⇨ [2, **3, 4**, 1, 5, ~~6~~]  <sub>SWAP!</sub>
 
-2: [2, 3, **4, 1**, 5, ~~6~~]
+2: [2, 3, **4, 1**, 5, ~~6~~] ⇨ [2, 3, **1, 4**, 5, ~~6~~]  <sub>SWAP!</sub>
 
-3: [2, 3, 1, **4, 5**, ~~6~~]
+3: [2, 3, 1, **4, 5**, ~~6~~] ⇨ [2, 3, 1, **4, 5**, ~~6~~]  <sub>same</sub>
 
 Stop!
 
@@ -61,13 +63,14 @@ Remember: we know that last element is the largest number in the list.  There is
 
 #### Iteration 3
 
-0: [**2, 3**, 1, 4, ~~5, 6~~]  
+
+0: [**2, 3**, 1, 4, ~~5, 6~~] ⇨ [**2, 3**, 1, 4, ~~5, 6~~] <sub>same</sub>
 
 If an element on the left has met a larger or equal element, we look at its bigger neighbor and now compare the larger neighbor to it's neighbor on the right.  The process is continued until our established end.
 
-1: [2, **3, 1**, 4, ~~5, 6~~]
+1: [2, **3, 1**, 4, ~~5, 6~~] ⇨ [2, **1, 3**, 4, ~~5, 6~~] <sub>SWAP!</sub>
 
-2: [2, 1, **3, 4**, ~~5, 6~~]
+2: [2, 1, **3, 4**, ~~5, 6~~] ⇨ [2, 1, **3, 4**, ~~5, 6~~] <sub>same</sub>
 
 Stop!
 
@@ -75,20 +78,20 @@ We don't stop sorting until we hit the end.  Even if we find an element that's a
 
 #### Iteration 4
 
-0: [**2, 1**, 3, ~~4, 5, 6~~]
+0: [**2, 1**, 3, ~~4, 5, 6~~] ⇨ [**1, 2**, 3, ~~4, 5, 6~~]
 
-1: [1, **2, 3**, ~~4, 5, 6~~]
+1: [1, **2, 3**, ~~4, 5, 6~~] ⇨ [1, **2, 3**, ~~4, 5, 6~~]
 
 Stop!
 
 #### Iteration 5
-0: [**1, 2**, ~~3, 4, 5, 6~~]
+0: [**1, 2**, ~~3, 4, 5, 6~~] ⇨ Done!
 
 Stop!
 
-When there is only one element (the first element) left in our unsorted list, it is already sorted for us as a freebie!
+When there is **only one element** (the first element) left in our unsorted list, it is already sorted for us as a freebie!
 
-#### List is now sorted using Bubble Sort: `[1, 2, 3, 4, 5, 6]`
+**List is now sorted using Bubble Sort: `[1, 2, 3, 4, 5, 6]`**
 
 
 <br>
