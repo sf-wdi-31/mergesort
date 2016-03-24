@@ -2,7 +2,7 @@
 
 Pre-work: [First, some Hungarian ("Csángó") folk dance](https://www.youtube.com/watch?v=lyZQPjUT5B4)
 
-Bubble sort is one of the first sorting algorithms you should try and master.  It essentially forces larger elements to 'sink' to the bottom/back while inadvertently 'floating' smaller elements to the top/front of a list.  This is done with numerous comparisons between one element in an array with its neighbor.  
+Bubble sort is one of the first sorting algorithms you should try and master.  It essentially forces larger elements to 'sink' to the bottom/back while inadvertently 'floating' smaller elements to the top/front of a list.  This is done with numerous comparisons between one element in an array and its neighbor.  
 
 ## What? Bubble Sort?
 
@@ -14,7 +14,12 @@ Here's the basic idea of the Bubble Sort algorithm:
 4. Move on to the next item.
 5. Repeat steps 1-4 until you go through the whole list without doing any swaps.
 
-* [example animation from wikipedia](https://commons.wikimedia.org/wiki/File:Bubble-sort-example-300px.gif#/media/File:Bubble-sort-example-300px.gif)
+#### Bubble Sort Animated
+<figure>
+<a title="By Swfung8 (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0) or GFDL (http://www.gnu.org/copyleft/fdl.html)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ABubble-sort-example-300px.gif"><img width="400" alt="Bubble-sort-example-300px" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif"/></a><br>
+<figcaption>Image: By Swfung8 (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0) or GFDL (http://www.gnu.org/copyleft/fdl.html)], via Wikimedia Commons</figcaption>
+</figure>
+
 
 
 ## Example: Sort this list using Bubble Sort: `[5, 4, 2, 3, 1, 6]`
