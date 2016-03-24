@@ -4,7 +4,20 @@ Pre-work: [First, some Hungarian ("Csángó") folk dance](https://www.youtube.co
 
 Bubble sort is one of the first sorting algorithms you should try and master.  It essentially forces larger elements to 'sink' to the bottom/back while inadvertently 'floating' smaller elements to the top/front of a list.  This is done with numerous comparisons between one element in an array with its neighbor.  
 
-## Sort this list using Bubble Sort: `[5, 4, 2, 3, 1, 6]`
+## What? Bubble Sort?
+
+Here's the basic idea of the Bubble Sort algorithm:
+
+1. Start at the beginning of a list (array) of items.
+2. Compare the item you're looking at to the next item in the list.
+3. If this item is greater than the next one, swap them.
+4. Move on to the next item.
+5. Repeat steps 1-4 until you go through the whole list without doing any swaps.
+
+* [example animation from wikipedia](https://commons.wikimedia.org/wiki/File:Bubble-sort-example-300px.gif#/media/File:Bubble-sort-example-300px.gif)
+
+
+## Example: Sort this list using Bubble Sort: `[5, 4, 2, 3, 1, 6]`
 
 #### Iteration 1
 Look at the first two elements in the list.
@@ -53,7 +66,7 @@ If an element on the left has met a larger or equal element, we look at its bigg
 
 Stop!
 
-We don't stop sorting until we hit the end.  Even if we find
+We don't stop sorting until we hit the end.  Even if we find an element that's already sorted.
 
 #### Iteration 4
 
@@ -77,7 +90,21 @@ When there is only one element (the first element) left in our unsorted list, it
 <br>
 ![](http://cdn2.crunchify.com/wp-content/uploads/2013/01/BubbleSort-Algorithm-Crunchify.jpg)
 
-## Now write your own bubble sort!
+## Challenge
+
+**Create a `bubbleSort` function that takes in an array of numbers, uses the bubble sort algorithm on it, and returns the sorted array.**
+
+* Work with a partner to implement the algorithm on the whiteboard.
+* Start with pseudocode before moving into actual code.
+* Test your work with the input/output pairs listed below:
+
+| Input | Expected Output |
+| :--- | :--- |
+| `[8, 5, 3]` | `[3, 5, 8]` |
+| `[0, 1, 2]` | `[0, 1, 2]` |
+| `[9, 4, 7, 6]` |  `[4, 6, 7, 9]` |
+| `[]`  | `[]` |
+
 #### Hints:
 
 <details><summary>
@@ -93,5 +120,26 @@ b = temp;
 ```
 </details>
 
-
 You may use a conventional for loop.
+
+
+## Thought Bubbles
+
+*Because we can only make that pun once.*
+
+1. Why is it safe to stop looping through the array after you have a full pass through without swaps?
+
+2. How would you change your function to sort the array in the reverse order?
+
+3. What are some basic requirements for Bubble Sort to work on an input array? Would your code work with an input array like `["Thursday", 47, ["a", "b", "c"]]`?
+
+4. Bubble Sort is known as a slower sorting algorithm in many scenarios. What is the best-case scenario for Bubble Sort? That is, what kind of array causes bubble sort to do the least amount of swaps? How many swaps would bubble sort do on this kind of array?
+
+5. What is the worst case scenario for Bubble Sort? (What kind of array causes it to do the most swaps?)
+
+
+## Resources
+
+* [Wikipedia](https://en.wikipedia.org/wiki/Bubble_sort)
+* [Graphical comparison of sorting algorithms](http://www.sorting-algorithms.com/)
+* [Hungarian ("Csángó") folk dance](https://www.youtube.com/watch?v=lyZQPjUT5B4)
