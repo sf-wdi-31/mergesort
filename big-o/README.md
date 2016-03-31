@@ -129,7 +129,5 @@ function addAllArrays(arrayOfArrays){
 ![time complexity graph from Yaacov Apelbaum, apelbaum.wordpress.com](https://apelbaum.files.wordpress.com/2011/10/yaacovapelbaumbigoplot.jpg)
 
 
-## [Exercises](exercises.md)
+**[Exercises](exercises.md)**
 
-
-<img src="https://media.giphy.com/media/LgB2sFodXQbAI/giphy.gif" width="400">
