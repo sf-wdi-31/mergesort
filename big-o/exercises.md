@@ -1,5 +1,9 @@
 # Big O Drills
 
+
+
+<img src="https://media.giphy.com/media/LgB2sFodXQbAI/giphy.gif" width="300">
+
 1. Whiteboard a function called `compare` that compares two numbers. The function should return `1` if the first number is greater than the second, `0` if they are equal, or `-1` if the first number is less than the second.    
 
     How many calculations does your function do?
