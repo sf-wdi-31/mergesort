@@ -43,6 +43,8 @@ Big O notation gives an upper limit for how long or how much space an algorithm 
 
 Remember: Big O overestimates. An algorithm is O(n) if (and only if) the time it takes to complete the algorithm is **less than or equal to** some constant multiple of the number of inputs.  
 
+
+
 ### Big O Guidelines
 
 #### O(1) operations
@@ -127,4 +129,7 @@ function addAllArrays(arrayOfArrays){
 ![time complexity graph from Yaacov Apelbaum, apelbaum.wordpress.com](https://apelbaum.files.wordpress.com/2011/10/yaacovapelbaumbigoplot.jpg)
 
 
-[Exercises](exercises.md)
+## [Exercises](exercises.md)
+
+
+<img src="https://media.giphy.com/media/LgB2sFodXQbAI/giphy.gif" width="400">
