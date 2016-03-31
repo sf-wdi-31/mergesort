@@ -122,8 +122,8 @@ function addAllArrays(arrayOfArrays){
 ```
 
 
-Graph: how the number of operations (time) grows with the number of input    
-elements for various orders of complexity   
+**Graph: how the number of operations (time) grows with the number of input elements for various orders of complexity**
+
 ![time complexity graph from Yaacov Apelbaum, apelbaum.wordpress.com](https://apelbaum.files.wordpress.com/2011/10/yaacovapelbaumbigoplot.jpg)
 
 
