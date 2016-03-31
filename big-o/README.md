@@ -1,3 +1,5 @@
+# Big O Notation and Algorithm Analysis
+
 ###What is an algorithm?
 
 A set of instructions to find the solution to a problem.
@@ -21,7 +23,7 @@ Time efficiency helps us predict how long it could take a particular algorithm t
 
 ##Big O notation
 
-### Big O Intro (5 minutes)
+### Big O Intro 
 
 Big O notation gives us a simplified way to talk about the  time and space requirements of an algorithm (often called time and space "complexity").  
 
@@ -41,7 +43,7 @@ Big O notation gives an upper limit for how long or how much space an algorithm 
 
 Remember: Big O overestimates. An algorithm is O(n) if (and only if) the time it takes to complete the algorithm is **less than or equal to** some constant multiple of the number of inputs.  
 
-### Big O Guidelines (10 minutes)
+### Big O Guidelines
 
 #### O(1) operations
 
