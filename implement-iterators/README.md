@@ -45,7 +45,7 @@ Today you'll be implementing iterator functions on the whiteboard in groups of t
   ```
   </details>
 
-3. Write a function called `myFilter` that takes in an array and a callback function. The callback function will have the following parameters: the current element, the current index, and the array itself. The callback function will return `true` or `false`. `myFilter` should return a new array containing all the elements for which the callback function returned `true`. See [`filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter).
+3. Write a function called `myFilter` that takes in an array and a callback function. The callback function will have the following parameters: the current element, the current index, and the array itself. The callback function will return `true` or `false`. `myFilter` should return a new array containing all the elements for which the callback function returned `true`. See [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter).
 
   <details><summary>click for example...</summary>
   Example Inputs:
@@ -67,9 +67,6 @@ Today you'll be implementing iterator functions on the whiteboard in groups of t
 
 * Use pseudo-code before writing any syntactically correct code on the board.
 * Write down inputs that you'll use to test the function, and write what the output should be (you can use the examples above).
-* Still on the whiteboard, walk through what your function will do when called on the test input.
-* Only when you have pseudo-code, test input, and expected output should you write code to implement the body of the function.
-
-## Further challenges
-
-If your group is satisfied with the code you have on the whiteboard for each function, put it to the test! Practice "red, green, refactor" with this [building JavaScript iterators lab](https://github.com/SF-WDI-27-28/building_js_iterators_lab).
+* Still on the whiteboard, walk through what your function will do when called on the test input.  
+* Only when you have pseudo-code, test input, and expected output should you write syntactially correct code to implement the body of the function.  
+* Once you're confident in your syntax, test again. 
