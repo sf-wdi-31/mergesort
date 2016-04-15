@@ -6,8 +6,15 @@ Today you'll be implementing iterator functions on the whiteboard in groups of t
 
 ## Problems
 
-1. Write a function called `myEach` that takes in an array and a callback function. `myEach` should iterate through all elements in the array and call the callback function with these parameters: the current element, the current index, and the array itself. `myEach` should return `undefined`.  See [`forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach).
+1. Write a function called `myEach` that takes in an array and a callback function. `myEach` should iterate through all elements in the array and call the callback function with these parameters: the current element, the current index, and the array itself. `myEach` should return `undefined`. See [`forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach).
 
+  ```js
+  function myEach (array, callback) {
+    // your code here!
+    // myEach should duplicate the behavior of forEach
+  }
+  ```
+  
   <details><summary>click for example...</summary>
   Example Inputs:
   ```js
@@ -24,10 +31,20 @@ Today you'll be implementing iterator functions on the whiteboard in groups of t
     // 1. apple
     // 2. banana
     // 3. cherry
+    
+  // note, this should be the same as calling
+  words.forEach(logAsList);
   ```
   </details>
 
 2. Write a function called `myMap` that takes in an array and a callback function. `myMap` should iterate through all elments in the array and call the callback function with these parameters: the current element, the current index, and the array itself. `myMap` should return a new array containing the results of the callback calls. See [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
+
+  ```js
+  function myMap (array, callback) {
+    // your code here!
+    // myEach should duplicate the behavior of map
+  }
+  ```
 
   <details><summary>click for example...</summary>
   Example Inputs:
@@ -42,10 +59,20 @@ Today you'll be implementing iterator functions on the whiteboard in groups of t
   ```js
   var result = myMap(numbers, timesTwo);
   // result is [2, 8, 18]; numbers is still [1, 4, 9]
+  
+  // note, this should be the same as saying:
+  result = numbers.map(timesTwo);
   ```
   </details>
 
 3. Write a function called `myFilter` that takes in an array and a callback function. The callback function will have the following parameters: the current element, the current index, and the array itself. The callback function will return `true` or `false`. `myFilter` should return a new array containing all the elements for which the callback function returned `true`. See [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter).
+
+    ```js
+  function myFilter (array, callback) {
+    // your code here!
+    // myEach should duplicate the behavior of filter
+  }
+  ```
 
   <details><summary>click for example...</summary>
   Example Inputs:
@@ -60,6 +87,9 @@ Today you'll be implementing iterator functions on the whiteboard in groups of t
   ```js
   var result = myFilter(numbers, isEven);
   // newArr is [4, 16]; numbers is still [1, 4, 9, 16]
+  
+  // note, this should be the same as saying:
+  result = numbers.filter(isEven);
   ```
   </details>
 
