@@ -15,10 +15,10 @@ function List() {
 List.prototype = {
 
   /*
-    Method: addAtEnd
+    Method: append
     Adds a Node to the END of the List
   */
-  addAtEnd: function(data) {
+  append: function(data) {
     // if linkedList is empty
     if(this.head === null) {
       // create the head (start) node
@@ -55,11 +55,11 @@ List.prototype = {
   },
 
   /*
-    Method: insertAtHead
+    Method: prepend
     Insert a new Node at the head of the list.
   */
-  insertAtHead: function(data) {
-    this.head = new Node(data, this.head);
+  prepend: function(data) {
+    // YOUR CODE HERE
   },
 
   /*
@@ -67,14 +67,8 @@ List.prototype = {
     Traverse the list. Return the amount of Nodes in the list.
   */
  length: function() {
-   var current = this.head;
-   var i = 0;
-   while(current !== null) {
-     i++;
-     current = current.next;
-   }
-   return i;
-  },
+    // YOUR CODE HERE
+ },
 
 
   /*
@@ -83,18 +77,7 @@ List.prototype = {
     true. If not, return false
   */
   exists: function(data) {
-    // start a current node at the head of the list
-    var current = this.head;
-    // loops through list until current node === null
-    while(current !== null){
-        // conditional check for data match
-        if(data === current.data){
-            return true;
-        }
-        // increment our node
-        current = current.next
-    }
-    return false;
+    // YOUR CODE HERE
   },
 
   /*
@@ -103,11 +86,7 @@ List.prototype = {
     Example: callback(current);
   */
   each: function(callback) {
-    var current = this.head;
-    while(current !== null) {
-      callback(current);
-      current = current.next;
-    }
+    // YOUR CODE HERE
   },
 
   /*
@@ -117,90 +96,35 @@ List.prototype = {
      If there's no Node with the desired data, return -1.
   */
   indexOf: function(data) {
-    var current = this.head;
-    var i = 0;
-    while(current !== null) {
-      if (current.data === data) {
-        return i;
-      } else {
-        current = current.next;
-        i++;
-      }
-    }
-    // if node hasn't been found yet, it's not in the list
-    return -1;
+    // YOUR CODE HERE
   },
 
   /*
     Method: dataFrom
     Traverse the list to the ith position and return the corresponding data.
-    If there is no ith position, console.log a message that the index is out of
-    range.
+    If there is no ith position, return undefined.
   */
   dataFrom: function(i) {
-    var current = this.head;
-    var index = 0;
-    while (current !== null){
-      if (index === i){
-        return current.data;
-      }
-      index ++;
-      current = current.next;
-    }
-    console.log('index ' + i + ' is out of range');
-  },
-
-  /*
-    Method: delete
-    Traverse the list, find the node with the corresponding data,
-    and remove that node. Other than deletion, list must be fully intact after
-    you remove the node!
-  */
-  delete: function(data) {
-    if (this.head.data === data){
-      this.head = this.head.next;
-      return;
-    }
-    var previous = null;
-    var current = this.head;
-    while (current !== null){
-      if (current.data === data){
-        previous.next = current.next;
-        return;
-      }
-      previous = current;
-      current = current.next;
-    }
+    // YOUR CODE HERE
   },
 
   /*
       Method: insertAt
       Traverse the List.  Find the ith Node in the list and insert a new Node
-       after it.  You must preserve the list structure! If there is no ith
-       node, console.log a message that the index is out of range.
+       after it.  You must preserve the list structure!
   */
   insertAt: function(i, data){
-    if(i === 0){
-      this.insertAtHead(data);
-      return;
-    }
-    var previousNode;
-    var newNode = new Node(data, null);
-    var current = this.head;
-    var index = 0;
-    while(current !== null){
-      if(index === i - 1){
-        newNode.next = current.next;
-        current.next = newNode;
-        if(i === this.length() - 1){
-          this.tail = newNode;
-        }
-        return 'inserted';
-      }
-      index++;
-      current = current.next;
-    }
-    console.log('index ' + i + ' is out of range');
+    // YOUR CODE HERE
+  },
+
+  /*
+    Method: delete
+    Traverse the list, find the node with the corresponding data,
+    and remove that node. List must still be fully intact after
+    you remove the node!
+  */
+  delete: function(data) {
+    // YOUR CODE HERE
   }
 }
 
