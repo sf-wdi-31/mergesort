@@ -9,19 +9,16 @@ Linked lists store sequential (ordered) data in a series of "nodes".  Each node 
 
 The very last node of a linked list, called the tail, has a null next node because nothing comes after it.
 
-![snake-toy](https://cloud.githubusercontent.com/assets/3254910/14589131/8456511c-048f-11e6-9ba3-1069f09591cd.jpg)
+<img src="https://cloud.githubusercontent.com/assets/3254910/14589131/8456511c-048f-11e6-9ba3-1069f09591cd.jpg" width="300px" alt="wiggle snake toy">
 
 
-## Singly Linked Lists vs Arrays
+## Singly Linked Lists and Arrays
 
 ####So... liked lists are like arrays?
 
 A little! But not 100%.  Let's step back and take a closer look at arrays. Their true nature may surprise you!
 
 Arrays store data in one continuous block of computer memory.  The computer sets aside just enough memory when the array is created. You can think of your computer's memory as a giant city full of identical buildings. Using an array is like renting out a bunch of adjacent buildings.
-
-![cartoon city skyline](https://cloud.githubusercontent.com/assets/3254910/14589266/b990b3a6-0492-11e6-922e-46cf0517fa64.png)
-
 
 This makes it really convenient to find all the data in an array. Your computer knows where each piece of data is stored because it knows where your array's territory starts and how big each building is.  Your computer can move from one location in the array to the next about as easily as you go down the street.
 
@@ -33,8 +30,13 @@ Totally! In lower level computer programming languages like C, you *would* have 
 
 But! in interviews it's good to know what's happening in the background, because that's the biggest difference between arrays and linked lists.
 
-#### Array / Linked List Comparison
+#### Array / Linked List Tradeoff
+
 Creating a linked list is a bit like renting buildings all around the city, wherever it's convenient.  Your computer knows the address of the headquarters (the head of the linked list), and each building manager has the address of the next building you own.
+
+
+![cartoon city skyline](https://cloud.githubusercontent.com/assets/3254910/14589266/b990b3a6-0492-11e6-922e-46cf0517fa64.png) 
+
 
 **Linked lists don't need to be resized with one giant block of memory;** they can grow with pointers to other parts of the computer's memory.  You don't have to find continuous free space.
 
@@ -49,15 +51,6 @@ On the other hand...
 **It can take more time to access a full linked list,** because the data living in different places can't just be read as a continuous chunk.  You have to travel around the city to visit all of your buildings.
 
 
-#### Tl;dr - Chart!
-
-| Linked Lists Vs C-style Arrays |
-| :-- | :-- | :-- |
-| Operation |  Singly Linked List | C-style Array |
-| Get by index | O(n) | O(1) |
-| Insert/delete at beginning | O(1) | O(n) with resize|
-| Insert/delete at end | O(n) | O(1) |
-| Insert/delete by index | O(n) with finding node | O(n) with resize |
 
 ## Applications
 
