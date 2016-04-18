@@ -20,6 +20,10 @@ A little! But not 100%.  Let's step back and take a closer look at arrays. Their
 
 Arrays store data in one continuous block of computer memory.  The computer sets aside just enough memory when the array is created. You can think of your computer's memory as a giant city full of identical buildings. Using an array is like renting out a bunch of adjacent buildings.
 
+
+![cartoon city skyline](https://cloud.githubusercontent.com/assets/3254910/14589266/b990b3a6-0492-11e6-922e-46cf0517fa64.png) 
+
+
 This makes it really convenient to find all the data in an array. Your computer knows where each piece of data is stored because it knows where your array's territory starts and how big each building is.  Your computer can move from one location in the array to the next about as easily as you go down the street.
 
 On the other hand, your computer needs to know from the start exactly how many buildings you need -- how big the array will be. And, if you ever need more space, your computer has to find a new continuous block of empty buildings (free memory) that's big enough to fit the array.
@@ -35,7 +39,7 @@ But! in interviews it's good to know what's happening in the background, because
 Creating a linked list is a bit like renting buildings all around the city, wherever it's convenient.  Your computer knows the address of the headquarters (the head of the linked list), and each building manager has the address of the next building you own.
 
 
-![cartoon city skyline](https://cloud.githubusercontent.com/assets/3254910/14589266/b990b3a6-0492-11e6-922e-46cf0517fa64.png) 
+<img height="350px" alt="academy of arts university map" src="https://cloud.githubusercontent.com/assets/3254910/14611060/52180c84-0545-11e6-9323-d33706d377e5.png">
 
 
 **Linked lists don't need to be resized with one giant block of memory;** they can grow with pointers to other parts of the computer's memory.  You don't have to find continuous free space.
