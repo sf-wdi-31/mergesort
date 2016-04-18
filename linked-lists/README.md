@@ -7,7 +7,7 @@
 
 Linked lists store sequential (ordered) data in a series of "nodes".  Each node in a linked list contains some value and a reference or "pointer" to the next node.
 
-The very last node of a linked list, called the tail, has a null next node because nothing comes after it.
+The very last node of a linked list, called the tail, has a null next node because nothing comes after it.  (Most singly linked lists don't store a tail pointer, but ours is fancy.)
 
 <img src="https://cloud.githubusercontent.com/assets/3254910/14589131/8456511c-048f-11e6-9ba3-1069f09591cd.jpg" width="300px" alt="wiggle snake toy">
 
@@ -67,7 +67,7 @@ Each node stores `data` and the `next` node.   The linked list stores its `head`
 
 There are some very simple tests in [simple-tests.js](./simple-tests.js).  Run the tests in your terminal with `node simple-tests.js`.
 
-If you haven't yet, fork and clone this repo.  Change directories into the `linked-list` directory, and fill in the method stubs from singly-linked-list.js to your heart's content!  Methods like `delete` and `insertAt` are reasonable interview questions.
+If you haven't yet, clone this repo.  Change directories into the `linked-list` directory, and fill in the method stubs from singly-linked-list.js to your heart's content!  Methods like `delete` and `insertAt` are reasonable interview questions.
 
 
 ## Stretch Challenge
