@@ -4,12 +4,12 @@ var SinglyLinkedList = require('./singly-linked-list.js');
 var LinkedList = new SinglyLinkedList();
 /* We're creating our "base" linkedList */
 for (var i=2; i<15; i=i+2){
-  LinkedList.addAtEnd(i);
+  LinkedList.append(i);
 }
 
 
 // check insertAtHead method
-LinkedList.insertAtHead("Breakfast Burrito");
+LinkedList.prepend("Breakfast Burrito");
 
 /* print */
 console.log("\nBefore:");
