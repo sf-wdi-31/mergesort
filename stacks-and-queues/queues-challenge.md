@@ -1,4 +1,4 @@
-# Interview Prep: Queue's
+# Interview Prep: Queues
 
 
 A queue just preserves the order in which items arrived into it. This helps model real world problems around waiting in your turn or in line.
