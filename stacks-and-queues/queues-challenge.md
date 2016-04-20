@@ -9,7 +9,7 @@ Scenario: you have a store and you're writing a script to help calculate a quick
 
 Your program should take in a list of items, each of which has a name and a price. It should then calculate the total price for the order.
 
-**Do not use iterators**
+**Do not use iterators. Do not use indices to access values inside your queue!**
 
 
 Example
