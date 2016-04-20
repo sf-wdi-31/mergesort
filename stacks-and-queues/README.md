@@ -1,6 +1,6 @@
 #Data Structures: Stacks and Queues
 
-Stacks and queues are two commonly used data structures.
+Stacks and queues are two commonly used data structures.  You can read about them below or watch [this video](https://www.youtube.com/watch?v=6QS_Cup1YoI). If you watch the video, note that all the operations mentioned take O(1) time.
 
 ##Stacks
 
@@ -43,6 +43,7 @@ Stacks are "Last In, First Out" -- the last item pushed on top of a stack will b
 
 1. It's also pretty natural to use arrays for them given the built-in methods we have access to.  So, let's think of arrays.  Where will you put the "top" of the stack? How would you add something to the top the stack? How would you take something off?
 
+1. **Stretch:** How would you implement a stack with a fixed-size array?
 
 ##Queues
 
@@ -85,6 +86,8 @@ Queues are "First In, First Out" -- the first item enqueued will be the first to
 1. How would you implement a queue with a linked list? Where would you decide the front of the queue would be? How would you `enqueue` something to the end of the queue? How would you `dequeue` something from the front of the queue?
 
 1. How would you implement a queue with an array? Where would you decide the front of the queue would be? How would you `enqueue` something to the end of the queue? How would you `dequeue` something from the front of the queue?
+
+1. **Stretch:** How would you implement a queue with a fixed-size array?
 
 
 
