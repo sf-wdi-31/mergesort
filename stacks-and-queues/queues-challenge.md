@@ -15,19 +15,10 @@ Your program should take in a list of items, each of which has a name and a pric
 Example
 
 ```js
-var itemQueue = [
-  {
-    name: 'banana',
-    price: .29
-  },
-  {
-    name: 'smoothie',
-    price: 4.00
-  },
-  {
-    name: 'car',
-    price: 10000
-  }
+var q = [
+  { name: 'banana',  price: .29 },
+  { name: 'smoothie', price: 4.00 },
+  { name: 'car', price: 10000 }
 ];
 
 var total = calculateTotal(itemQueue);
