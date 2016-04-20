@@ -84,7 +84,9 @@ Queues are "First In, First Out" -- the first item enqueued will be the first to
 
 
 
-## Challenges: Design Decisions
+## Challenges
+
+####Design Decisions
 
 Would you use a stack or a queue to...
 
@@ -97,44 +99,42 @@ Would you use a stack or a queue to...
 1. ... display *only* the 10 most recent messages a user posted, in the order they were posted?
 
 
-## Stretch Challenges
-
 #### Stacks
 
-1. Try out [this stack challenge](stacks-challenge.md), an epic battle for correct code!
+1. **The Call Stack**
 
-2. **The Call Stack**
+ Most programming languages rely on something called the "call stack," especially for recursion. The call stack keeps track of function calls that are in the process of executing.  When a function is called, it's `push`ed onto the call stack. When the function returns, it's `pop`ed off of the stack.
+ 
+ Here's a recursive `factorial` function:
+ 
+ ```js
+ function factorial(num){
+   if (num > 1){
+     return num * factorial(num-1);
+   } else if (num === 1 || num === 0){
+     return 1;
+   } else {
+     console.log("can't do factorial of this number!");
+     return undefined;
+   }
+ }
+ 
+ factorial(3);
+ // => 6
+ ```
+ 
+ Write out the full call stack for `factorial(3)` at each step in the function's execution.
 
-Most programming languages rely on something called the "call stack," especially for recursion. The call stack keeps track of function calls that are in the process of executing.  When a function is called, it's `push`ed onto the call stack. When the function returns, it's `pop`ed off of the stack.
-
-Here's a recursive `factorial` function:
-
-```js
-function factorial(num){
-  if (num > 1){
-    return num * factorial(num-1);
-  } else if (num === 1 || num === 0){
-    return 1;
-  } else {
-    console.log("can't do factorial of this number!");
-    return undefined;
-  }
-}
-
-factorial(3);
-// => 6
-```
-
-Write out the full call stack for `factorial(3)` at each step in the function's execution.
+1. **Stretch:** Try out [this stack challenge](stacks-challenge.md), an epic battle for correct code!
 
 #### Queues
 
-1. Try out [this queue challenge](queues-challenge.md) to calculate the total price of a purchase. 
+1. **Message Queues**
 
-2. **Message Queues**
+ Queues are often used to create "buffers" that temporarily store data from one part of a program until another part of a program can process the data. This is common with asynchronous data transfer, or mismatches between how often data is sent and how often it can be processed.
+ 
+ We'll think of a scenario where restaurant diners order food faster than the chefs can cook it.  
+ 
+ Describe how you would use a queue help the chef keep track of meals to make.  What should the chef do when the queue is empty?
 
-Queues are often used to create "buffers" that temporarily store data from one part of a program until another part of a program can process the data. This is common with asynchronous data transfer, or mismatches between how often data is sent and how often it can be processed.
-
-We'll think of a scenario where restaurant diners order food faster than the chefs can cook it.  
-
-Describe how you would use a queue help the chef keep track of meals to make.  What should the chef do when the queue is empty?
+1. **Stretch:** Try out [this queue challenge](queues-challenge.md) to calculate the total price of a purchase. 
