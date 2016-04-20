@@ -12,7 +12,7 @@ Stacks are "Last In, First Out" -- the last item pushed on top of a stack will b
 
 <img src="http://stratton.d11.org/PublishingImages/kid%20with%20pancakes.gif" alt="child defending stack of pancakes using fork and knife" width="400px">
 
-*Little Jim dares you to try and `pop` from his stack of pancakes.*
+*Don't you dare `pop` from Jimmy's stack of pancakes.*
 
 ### Thinking with Stacks
 
@@ -40,8 +40,16 @@ Stacks are "Last In, First Out" -- the last item pushed on top of a stack will b
   </details>
 
 1. Stacks and queues are often implemented with linked lists. Think about how you'd use a linked list to make a stack.  Where will you put the "top" of the stack? How would you add something to the top the stack? How would you take something off?
+ 
+ <details><summary>super stuck? click for an answer...</summary>
+ > The "top" could be the head of the linked list. You could use `prepend` to `push` something onto the top. You could `delete` the list's head and return it to `pop`.
+ </details>
 
-1. It's also pretty natural to use arrays for them given the built-in methods we have access to.  So, let's think of arrays.  Where will you put the "top" of the stack? How would you add something to the top the stack? How would you take something off?
+1. It's also pretty natural to use arrays for stacks given the built-in methods we have access to in JavaScript.  So, let's think of arrays.  Where would you put the "top" of the stack? How would you add something to the top the stack? How would you take something off?
+
+ <details><summary>super stuck? click for an answer...</summary>
+ > The "top" could be the end of the array, and you could use array methods `push` and `pop`.  Thanks, JavaScript!
+ </details>
 
 1. **Stretch:** How would you implement a stack with a fixed-size array?
 
@@ -83,9 +91,19 @@ Queues are "First In, First Out" -- the first item enqueued will be the first to
   </details>
 
 
-1. How would you implement a queue with a linked list? Where would you decide the front of the queue would be? How would you `enqueue` something to the end of the queue? How would you `dequeue` something from the front of the queue?
 
-1. How would you implement a queue with an array? Where would you decide the front of the queue would be? How would you `enqueue` something to the end of the queue? How would you `dequeue` something from the front of the queue?
+1. How would you implement a queue **with an array**? Where would you decide the front of the queue would be? How would you `enqueue` something to the end of the queue? How would you `dequeue` something from the front of the queue?
+
+ <details><summary>super stuck? click for an answer...</summary>
+ > The "front" could be the beginning of the array.  To enqueue, you'd use JavaScript's handy `push` array method. To dequeue, you could use JavaScript's `shift` method, which removes and returns the first element from an array.
+ </details>
+ 
+
+1. How would you implement a queue **with a linked list**? Where would you decide the front of the queue would be? How would you `enqueue` something to the end of the queue? How would you `dequeue` something from the front of the queue?
+
+ <details><summary>super stuck? click for an answer...</summary>
+ > You'd need to store the tail.  The "front" could be the head of the linked list. The "back" could be the tail.  You could enqueue by `append`ing to the tail.  You could dequeue by deleting and returning the head node. 
+ </details>
 
 1. **Stretch:** How would you implement a queue with a fixed-size array?
 
