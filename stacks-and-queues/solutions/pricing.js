@@ -5,7 +5,10 @@ var q = [
   { name: 'car', price: 10000 }
 ];
 
-
+// calculate the total price of items from the itemQueue
+// every 3rd item is 10% off
+// every 5th item is 20% off
+// items that are 3rd and 5th are 30% off
 function calculateTotal(itemQueue){
   var total = 0;
   var count = 1;
@@ -26,9 +29,9 @@ function calculateTotal(itemQueue){
   return total;
 }
 
-
+// See it in action
 console.log('calculating total for\n', q);
-console.log('total is', calculateTotal(q));
+console.log('total is', calculateTotal(q)); // 9004.29
 
 
 // // QUEUE data structure version 
