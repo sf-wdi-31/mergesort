@@ -1,3 +1,10 @@
+<!--
+Location: SF
+-->
+
+![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
+
+
 # Merge Sort
 
 
@@ -11,7 +18,7 @@ Merge sort is the first powerful sorting algorithm that you will encounter in th
 <!-- specific/measurable goal for students to achieve -->
 *After this workshop, developers will be able to:*
 
-- explain the steps to create a recursive algorithm.
+- explain three steps to create a recursive algorithm.
 - describe the merge sort algorithm and a merge algorithm.
 - write a pseudocode version of merge sort and a JavaScript version of merge sort.
 - determine the runtime (in big-`O()` notation) for merge sort.
