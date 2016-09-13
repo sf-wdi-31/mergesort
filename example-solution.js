@@ -4,7 +4,7 @@ function mergeSort(arr) {
     return arr;
   }
   // figure out the middle point
-  var middle = parseInt(arr.length / 2);
+  var middle = Math.floor(arr.length / 2);
 
   // create an array of the left half
   var left = arr.slice(0, middle);
