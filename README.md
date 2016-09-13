@@ -115,11 +115,21 @@ There are usually TWO algorithms that work together to accomplish a merge sort:
 
 When dealing with recursion, we often use a tree structure to make an educated guess about Big O runtime.  Here's one for `factorial`:
 
-![](https://copingwithcomputers.files.wordpress.com/2013/11/factorialrecursion-e1384837049546.png)
+<img width=50% src="https://copingwithcomputers.files.wordpress.com/2013/11/factorialrecursion-e1384837049546.png">
+
+Each node in the tree represents a subproblem, and the value in each node tracks the size of the problem. The root node is the original problem. Base cases are the leaves - the nodes at the bottom of the tree that don't have any children. 
+
+Once we have our tree, the total runtime can be calculated by summing up the work required for every node. We can do this by finding the total work at each level of the tree, then summing up the levels of the tree.  If the work at each level is the same, this can be simplified to multiplying the work at each level by the number of levels in the tree. 
+
+Here's a merge sort recursion tree:
+
+<img src="http://intra.oxido.tv/wp-admin/includes/recursion-tree-method-for-solving-recurrences-examples-i0.png">
+
+The number of levels is log<sub>2</sub>n, and the work required at each level adds up to O(n).  Recursion trees aren't foolproof - this is a "hand wavey" way to show that the Big O runtime of merge sort is `O(n log(n))`.   Since the work at each level is very, very similar, the recursion tree gives us the correct big O for merge sort!
 
 ## Additional Resources
 
 * [Merge sort on wikipedia](https://en.wikipedia.org/wiki/Merge_sort)
-* [Big O for recursion from MIT](
+* [Calculating Big O for recursion from MIT](
 https://courses.csail.mit.edu/6.006/spring11/rec/rec08.pdf)
 * [Graphical comparison of sorting algorithms](http://www.sorting-algorithms.com/)
