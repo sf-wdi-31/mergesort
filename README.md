@@ -117,7 +117,7 @@ When dealing with recursion, we often use a tree structure to make an educated g
 
 <img width=25% src="https://copingwithcomputers.files.wordpress.com/2013/11/factorialrecursion-e1384837049546.png">
 
-Each node in the tree represents a subproblem, and the value in each node tracks the size of the problem. The root node is the original problem. Base cases are the leaves - the nodes at the bottom of the tree that don't have any children. 
+Each node in the tree represents a subproblem. The root node is the original problem. Base cases are the leaves - the nodes at the bottom of the tree that don't have any children. 
 
 Once we have our tree, the total runtime can be calculated by summing up the work required for every node. We can do this by finding the total work at each level of the tree, then summing up the levels of the tree.  If the work at each level is the same, this can be simplified to multiplying the work at each level by the number of levels in the tree. 
 
