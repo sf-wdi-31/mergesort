@@ -115,7 +115,7 @@ There are usually TWO algorithms that work together to accomplish a merge sort:
 
 When dealing with recursion, we often use a tree structure to make an educated guess about Big O runtime.  Here's one for `factorial`:
 
-<img width=50% src="https://copingwithcomputers.files.wordpress.com/2013/11/factorialrecursion-e1384837049546.png">
+<img width=25% src="https://copingwithcomputers.files.wordpress.com/2013/11/factorialrecursion-e1384837049546.png">
 
 Each node in the tree represents a subproblem, and the value in each node tracks the size of the problem. The root node is the original problem. Base cases are the leaves - the nodes at the bottom of the tree that don't have any children. 
 
