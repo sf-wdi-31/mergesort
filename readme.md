@@ -12,7 +12,7 @@ Location: SF
 <!-- framing the "why" in big-picture/real world examples -->
 *This workshop is important because:*
 
-Merge sort is the first fast, powerful sorting algorithm that you will encounter in the wilds of the real world (it's baked into Safari and Firefox!).  It uses an extremely efficient application of the 'Divide and Conquer' concept to sort lists of elements.  It's also a great chance to practice recursion.
+Merge sort is the first fast, powerful sorting algorithm that you will encounter in the wilds of the real world (it's baked into Safari and Firefox!).  It uses an extremely efficient application of the 'Divide and Conquer' concept to sort lists of elements.  It's also a great chance to practice recursion, also it is great way to learn divide and conquer concept.
 
 ### What are the objectives?
 <!-- specific/measurable goal for students to achieve -->
